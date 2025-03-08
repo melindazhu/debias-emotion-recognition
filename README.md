@@ -147,8 +147,6 @@ Ignores large files like datasets from being committed.
 ---
 
 # ⚠️ Notes  
-- Ensure datasets are stored in `data/RAF_DB/` and `data/FairFace/`.  
-- Experiment with additional bias mitigation techniques.  
 - If you encounter issues, open a **GitHub issue**.  
 
 ---
