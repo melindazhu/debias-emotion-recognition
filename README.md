@@ -64,7 +64,7 @@ Face_Emotion_Bias_Project/
 │   ├── raf_embeddings.npy      # Processed face embeddings  
 │   ├── raf_labels.npy          # Processed race & emotion labels  
 │   ├── fairness_results.csv    # Bias evaluation results  
-│   └── README.md               # Output explanations  
+│   └── README.md               
 ├── data_processing.py  # Preprocess datasets & extract embeddings  
 ├── baseline_model.py   # Train baseline emotion model  
 ├── bias_mitigation.py  # Implement bias mitigation techniques  
@@ -130,20 +130,15 @@ This will apply **adversarial debiasing** and recompute fairness metrics.
 - `raf_embeddings.npy` → **Face embeddings from FaceNet**.  
 - `raf_labels.npy` → **Race and emotion labels**.  
 - `fairness_results.csv` → **Bias evaluation metrics**.  
-- `README.md` → Output files explanation.  
+- `README.md`  
 
-### 📁 `code/`  
 - `data_processing.py` → **Preprocess datasets & generate embeddings**.  
 - `baseline_model.py` → **Train a baseline emotion model**.  
 - `bias_mitigation.py` → **Implement fairness-aware adversarial debiasing**.  
 - `README.md` 
 
 ### 📄 `requirements.txt`  
-Contains Python dependencies (e.g., `torch`, `facenet-pytorch`, `opencv-python`).  
-
-### 📄 `.gitignore`  
-Ignores large files like datasets from being committed.  
-
+Python dependencies (e.g., `torch`, `facenet-pytorch`, `opencv-python`).  
 ---
 
 # ⚠️ Notes  
