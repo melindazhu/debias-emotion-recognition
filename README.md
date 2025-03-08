@@ -69,8 +69,8 @@ Face_Emotion_Bias_Project/
 │   ├── data_processing.py  # Preprocess datasets & extract embeddings  
 │   ├── baseline_model.py   # Train baseline emotion model  
 │   ├── bias_mitigation.py  # Implement bias mitigation techniques  
-│   └── README.md           # Code structure explanation  
-├── requirements.txt   # Required Python packages  
+│   └── README.md         
+├── requirements.txt   # Python packages  
 ├── README.md          # Project overview & setup instructions  
 └── .gitignore         # Ignore large files (e.g., datasets)
 ```
@@ -138,7 +138,7 @@ This will apply **adversarial debiasing** and recompute fairness metrics.
 - `data_processing.py` → **Preprocess datasets & generate embeddings**.  
 - `baseline_model.py` → **Train a baseline emotion model**.  
 - `bias_mitigation.py` → **Implement fairness-aware adversarial debiasing**.  
-- `README.md` → Code explanations.  
+- `README.md` 
 
 ### 📄 `requirements.txt`  
 Contains Python dependencies (e.g., `torch`, `facenet-pytorch`, `opencv-python`).  
