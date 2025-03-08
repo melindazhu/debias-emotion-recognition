@@ -90,3 +90,70 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows, use venv\Scripts\activate
 ```
 
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Download the Datasets
+- **RAF-DB**: Download and place in `data/RAF_DB/`.  
+- **FairFace**: Download and place in `data/FairFace/`. 
+
+### 5️⃣ Run the Data Processing Script
+```bash
+python code/data_processing.py
+```
+This will process **RAF-DB**, assign **race labels**, and save embeddings in `outputs/`.  
+
+
+### 6️⃣ Train the Baseline Model
+```bash
+python code/baseline_model.py
+```
+This will train a **ResNet/MobileNet model** and output evaluation results.  
+
+
+### 7️⃣ Implement Bias Mitigation
+```bash
+python code/bias_mitigation.py
+```
+This will apply **adversarial debiasing** and recompute fairness metrics.  
+
+---
+
+# 📑 File Descriptions  
+
+### 📁 `data/`  
+- `RAF_DB/` → **Emotion-labeled dataset** (happiness, sadness, etc.).  
+- `FairFace/` → **Race-labeled dataset** for bias correction.  
+- `README.md` → Dataset overview.  
+
+### 📁 `outputs/`  
+- `raf_embeddings.npy` → **Face embeddings from FaceNet**.  
+- `raf_labels.npy` → **Race and emotion labels**.  
+- `fairness_results.csv` → **Bias evaluation metrics**.  
+- `README.md` → Output files explanation.  
+
+### 📁 `code/`  
+- `data_processing.py` → **Preprocess datasets & generate embeddings**.  
+- `baseline_model.py` → **Train a baseline emotion model**.  
+- `bias_mitigation.py` → **Implement fairness-aware adversarial debiasing**.  
+- `README.md` → Code explanations.  
+
+### 📄 `requirements.txt`  
+Contains Python dependencies (e.g., `torch`, `facenet-pytorch`, `opencv-python`).  
+
+### 📄 `.gitignore`  
+Ignores large files like datasets from being committed.  
+
+---
+
+# ⚠️ Notes  
+- Ensure datasets are stored in `data/RAF_DB/` and `data/FairFace/`.  
+- Experiment with additional bias mitigation techniques.  
+- If you encounter issues, open a **GitHub issue**.  
+
+---
+
+# 📝 License  
+This project is licensed under the **MIT License**. See `LICENSE` for details.  
