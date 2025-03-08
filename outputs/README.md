@@ -1,6 +1,6 @@
 # 📂 Output Files  
 
-This directory contains the output files generated, including face embeddings, labels, and fairness evaluation results after applying bias mitigation.  
+This directory contains the output files, including face embeddings, labels, and fairness evaluation results after applying bias mitigation.  
 
 ---
 
