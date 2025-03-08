@@ -65,11 +65,9 @@ Face_Emotion_Bias_Project/
 │   ├── raf_labels.npy          # Processed race & emotion labels  
 │   ├── fairness_results.csv    # Bias evaluation results  
 │   └── README.md               # Output explanations  
-├── code/  
-│   ├── data_processing.py  # Preprocess datasets & extract embeddings  
-│   ├── baseline_model.py   # Train baseline emotion model  
-│   ├── bias_mitigation.py  # Implement bias mitigation techniques  
-│   └── README.md         
+├── data_processing.py  # Preprocess datasets & extract embeddings  
+├── baseline_model.py   # Train baseline emotion model  
+├── bias_mitigation.py  # Implement bias mitigation techniques  
 ├── requirements.txt   # Python packages  
 ├── README.md          # Project overview & setup instructions  
 └── .gitignore         # Ignore large files (e.g., datasets)
